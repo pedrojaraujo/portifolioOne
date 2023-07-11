@@ -86,6 +86,10 @@ a {
   gap: 32px;
 }
 
+.menu__list__item:last-child {
+ font-weight: var(--fontbolder);
+}
+
 /*Sessão Title*/
 
 .title {
@@ -139,7 +143,7 @@ a {
 .about {
   display: flex;
   width: 100%;
-  height: 383px;
+  height: 800px;
   background-color: var(--ligthblue);
   align-items: center;
 }
@@ -149,7 +153,7 @@ a {
   margin: auto;
 }
 
-.about__container h3 {
+.about__container {
   font-size: var(--xmediusize);
 }
 
@@ -499,24 +503,3 @@ a {
   color: var(--red);
 }
 
-
-/*Mobile*/
-@media (min-width: 425px) {
-  /*Menu*/
-
-  /*Titulo*/
-
-  /*Sessão sobre*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formação Acadêmica*/
-
-  /*Experiência Profissional*/
-
-  /*Contato*/
-
-  /*Footer*/
-}
