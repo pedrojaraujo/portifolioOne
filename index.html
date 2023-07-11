@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mq__768px.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Portifólio Pessoal</title>
   </head>
@@ -116,7 +119,7 @@
         <div class="skills__line">
           <div class="skills__box">
             <ul>
-              <li class="skills__img"><img src="assets\htlm.png" /></li>
+              <li class="skills__img"><i class="fa-brands fa-html5"></i></li>
               <li class="skills__name">Html 5</li>
             </ul>
           </div>
@@ -124,7 +127,7 @@
           <div class="skills__box">
             <ul>
               <li class="skills__img">
-                <img src="assets\js_icon.png" alt="" />
+                <i class="fa-brands fa-js"></i>
               </li>
               <li class="skills__name">Javascript</li>
             </ul>
@@ -133,16 +136,16 @@
           <div class="skills__box">
             <ul>
               <li class="skills__img">
-                <img src="assets\php_icon.png" alt="" />
+                <i class="fa-brands fa-react"></i>
               </li>
-              <li class="skills__name">PHP</li>
+              <li class="skills__name">ReactJs</li>
             </ul>
           </div>
 
           <div class="skills__box">
             <ul>
               <li class="skills__img">
-                <img src="assets\nodejs_icon.png" alt="" />
+                <i class="fa-brands fa-node"></i>
               </li>
               <li class="skills__name">Node JS</li>
             </ul>
@@ -151,16 +154,7 @@
           <div class="skills__box">
             <ul>
               <li class="skills__img">
-                <img src="assets\react_icon.png" alt="" />
-              </li>
-              <li class="skills__name">React</li>
-            </ul>
-          </div>
-
-          <div class="skills__box">
-            <ul>
-              <li class="skills__img">
-                <img src="assets\css_icon.png" alt="" />
+                <i class="fa-brands fa-css3-alt"></i>
               </li>
               <li class="skills__name">CSS</li>
             </ul>
@@ -175,29 +169,48 @@
           <div class="hobbies__box">
             <ul>
               <li class="hobbies__img">
-                <img src="assets\headphones_icon.png" alt="" />
+                <i class="fa-solid fa-podcast"></i>
               </li>
-              <li class="hobbies__name">Ouvir música</li>
+              <li class="hobbies__name">Ouvir podcasts</li>
             </ul>
           </div>
 
           <div class="hobbies__box">
             <ul>
               <li class="hobbies__img">
-                <img src="assets\tv_icon.png" alt="" />
+                <i class="fa-solid fa-film"></i>
               </li>
-              <li class="hobbies__name">Assistir séries</li>
+              <li class="hobbies__name">Assistir filmes</li>
             </ul>
           </div>
 
           <div class="hobbies__box">
             <ul>
               <li class="hobbies__img">
-                <img src="assets\forkspoon_icon.png" alt="" />
+                <i class="fa-solid fa-book"></i>
               </li>
-              <li class="hobbies__name">Cozinhar</li>
+              <li class="hobbies__name">Leitura</li>
             </ul>
           </div>
+
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <i class="fa-solid fa-gamepad"></i>
+              </li>
+              <li class="hobbies__name">Jogar videogame</li>
+            </ul>
+          </div>
+
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <i class="fa-solid fa-dumbbell"></i>
+              </li>
+              <li class="hobbies__name">Fazer musculação</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
@@ -359,7 +372,7 @@
       <section class="formcontato">
         <div id="contato" class="formcontato__contacto">
           <div class="formcontato--esquerda">
-            <img class="formcontato__img" src="assets\contact_image.png" />
+            <img class="formcontato__img" src="assets\contact_image.jpg" />
           </div>
           <div class="formcontato__text">
             <h2 class="formcontato__title">Contato</h2>
@@ -375,7 +388,7 @@
                 type="text"
                 id="nome"
                 placeholder="Nome"
-                maxlength="50"
+                maxlength="51"
                 required
               />
               <input
@@ -391,7 +404,7 @@
                 id="assunto"
                 placeholder="Assunto"
                 required
-                maxlength="50"
+                maxlength="51"
               />
               <textarea
                 class="formcontato__textarea"
@@ -400,6 +413,8 @@
                 id="mensagem"
                 name="mensagem"
                 placeholder="Sua mensagem"
+                required
+                maxlength="301"
               ></textarea>
               <button class="formcontato__botao" type="submit">
                 Enviar mensagem

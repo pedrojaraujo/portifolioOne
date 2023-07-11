@@ -105,7 +105,12 @@ a {
   width: 368px;
   height: 368px;
   border-radius: 100%;
-  box-shadow: 2px 3px 5px black;
+  box-shadow: 1px 5px 10px var(--primaryblack);
+  &:hover {
+    transition: 0.2s;
+    scale: 1.02;
+
+  }
 }
 
 .title__container {
@@ -161,15 +166,14 @@ a {
 }
 
 .skills__line {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: center;
   width: 1136px;
   height: 244px;
-  gap: 32px;
   margin: auto;
-  gap: 8px;
-  align-items: center;
-  text-align: center;
+  gap: 16px;
+  flex-flow: row wrap;
+
 }
 
 .skills__box {
@@ -181,6 +185,18 @@ a {
   height: 175px;
   padding: 16px;
   background-color: var(--withe);
+  box-shadow: 1px 5px 8px var(--primaryblack);
+  &:hover {
+    transition: 0.4s;
+    scale: 1.1;
+
+  }
+}
+
+.skills__img {
+  font-size: 50px;
+  color: var(--normalblue);
+  margin-block: 0.5rem;
 }
 
 /*Sessão Hobbies*/
@@ -188,6 +204,8 @@ a {
 .hobbies {
   width: 100%;
   text-align: center;
+  position: relative;
+
 }
 
 .hobbies__title {
@@ -195,13 +213,13 @@ a {
 }
 
 .hobbies__line {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
   width: 1136px;
   height: 244px;
   margin: auto;
-  align-items: center;
+  gap: 16px;
+  flex-flow: row wrap;
 }
 
 .hobbies__box {
@@ -209,10 +227,22 @@ a {
   box-sizing: border-box;
   align-items: center;
   justify-content: flex-start;
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   padding: 16px;
   background-color: var(--withe);
+  box-shadow: 1px 5px 8px var(--primaryblack);
+  &:hover {
+    transition: 0.4s;
+    scale: 1.1;
+
+  }
+}
+
+.hobbies__img {
+  font-size: 50px;
+  color: var(--normalblue);
+  margin-block: 0.5rem;
 }
 
 /* Experiência Acadêmica*/
@@ -254,6 +284,11 @@ a {
   justify-content: flex-start;
   width: 368px;
   height: 347px;
+  &:hover {
+    transition: 0.4s;
+    scale: 1.05;
+
+  }
 }
 
 .academic__courses__list {
@@ -464,23 +499,6 @@ a {
   color: var(--red);
 }
 
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-@media (min-width: 768px) {
-  /* Menu */
-
-  /*title*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Experiências acadêmicas*/
-
-  /*Expeirência profissional*/
-}
 
 /*Mobile*/
 @media (min-width: 425px) {
